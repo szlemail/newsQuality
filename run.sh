@@ -15,7 +15,7 @@ spark-submit \
   --executor-cores 2 \
   --executor-memory 2g \
   --driver-memory 8g \
-  --jars hdfs:///user/recessw/tensorflow/lib/spark-tensorflow-connector_2.11-1.11.0.jar \
+  --jars hdfs:///your_path_on_hdfs/spark-tensorflow-connector_2.11-1.11.0.jar \
   --conf spark.executorEnv.LD_LIBRARY_PATH=$LIB_JVM:$LIB_HDFS \
   --conf spark.executorEnv.PYSPARK_PYTHON=/opt/app/anaconda3/bin/python3 \
   --files  vocab.txt \
